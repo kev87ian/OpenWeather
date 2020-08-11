@@ -16,7 +16,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "error";
     public static String BaseUrl = "https://api.openweathermap.org/";
     public static String AppId = "2e65127e909e178d0af311a81f39948c";
     public static String lat = "-1.196036";
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getCurrentData();
-                Toast.makeText(getApplicationContext(), "Fetching data", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Fetching data", Toast.LENGTH_SHORT).show();
             }
         });
 }
@@ -58,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                             "Temperature: " +
                             weatherResponse.main.temp +
                             "\n" +
+                            "Town: " +
                             "Temperature(Min): " +
                             weatherResponse.main.temp_min +
                             "\n" +
