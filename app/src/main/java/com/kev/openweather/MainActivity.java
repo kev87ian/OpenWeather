@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onFailure(@NonNull Call<WeatherResponse> call, @NonNull Throwable t) {
                 weatherData.setText(t.getMessage());
-            Toast.makeText(getApplicationContext(), "Tough luck. I am facing technical difficulties. :(", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Tough luck. I am facing technical difficulties :(", Toast.LENGTH_LONG).show();
             }
         });
     }
