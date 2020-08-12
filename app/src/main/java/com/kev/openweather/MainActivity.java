@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     public static String BaseUrl = "https://api.openweathermap.org/";
-    public static String AppId = "2e65127e909e178d0af311a81f39948c";
+    public static String AppId = "d34b029f3169d4a1726398cfbaa7ac2f";
     public static String lat = "-1.196036";
     public static String lon = "36.925285";
     private TextView weatherData;
